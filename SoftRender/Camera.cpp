@@ -71,9 +71,9 @@ Matrix4x4* Camera::View2Projection() {
 		v2pMat->SetZero();
 		v2pMat->_m[0][0] = 1 / (tan(angle / 2.0f) * aspect);
 		v2pMat->_m[1][1] = 1 / tan(angle / 2.0f);
-		v2pMat->_m[2][2] = (farPlan + nearPlan) / (farPlan - nearPlan);
-		v2pMat->_m[2][3] = (2 * nearPlan * farPlan) / (farPlan - nearPlan);
-		v2pMat->_m[3][2] = -1; // ×óÊÖ
+		v2pMat->_m[2][2] = -(farPlan + nearPlan) / (farPlan - nearPlan);
+		v2pMat->_m[2][3] = -(2 * nearPlan * farPlan) / (farPlan - nearPlan);
+		v2pMat->_m[3][2] = -1;
 	//}
 	return v2pMat;
 }
