@@ -158,9 +158,10 @@
     <ClInclude Include="Camera.h" />
     <ClInclude Include="Common.h" />
     <ClInclude Include="Cube.h" />
+    <ClInclude Include="LoadTexture.h" />
     <ClInclude Include="Matrix4x4.h" />
     <ClInclude Include="RenderCore.h" />
-    <ClInclude Include="Texture.h" />
+    <ClInclude Include="RenderTexture.h" />
     <ClInclude Include="Vector3.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

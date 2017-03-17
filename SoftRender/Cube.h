@@ -9,14 +9,14 @@ class Cube {
 public:
 	float scale = 1.0f;
 	float rotation = -45;
-	char * texturePath = ""; // 暂时只支持像素为4的倍数的图片
+	char * textureName = "1117.bmp";
 
 	int vectexCount = 12 * 3;
 	// 正方形顶点（模型空间坐标）
-	//Vector3f vertexs[8] = {
-	//	Vector3f(-1,1,-1,1), Vector3f(1,1,-1,1), Vector3f(1,-1,-1,1), Vector3f(-1,-1,-1,1),
-	//	Vector3f(-1,1,1,1), Vector3f(1,1,1,1), Vector3f(1,-1,1,1), Vector3f(-1,-1,1,1) };
+	//	Vector3f(-1,1,-1,1), Vector3f(1,1,-1,1), Vector3f(1,-1,-1,1), Vector3f(-1,-1,-1,1)
+	//	Vector3f(-1,1,1,1),  Vector3f(1,1,1,1),  Vector3f(1,-1,1,1),  Vector3f(-1,-1,1,1)
 
+	// 实际上模型是以三角面的形式存在，而不是之后才被拆为三角面
 	Vertex Vertexs[12 * 3] = {
 		// 1,2,3,3,4,1, 前
 		Vertex(-1,1,-1,0,0), Vertex(1,1,-1,0,1), Vertex(1,-1,-1,1,1),
@@ -41,7 +41,6 @@ public:
 	// 正方形坐标（空间中坐标）
 	Vector3f position = Vector3f(0,-2,5,1); 
 
-	// 实际上模型是以三角面的形式存在，而不是之后才被拆为三角面
 
 
 	// 根据子坐标系原点坐标和旋转获得坐标空间转换矩阵（无旋转和缩放）

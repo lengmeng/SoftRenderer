@@ -15,7 +15,7 @@ struct Vertex {
 	}
 };
 
-// 片元数据（屏幕坐标、UV坐标）
+// 顶点数据（屏幕坐标、UV坐标）
 struct VertexData {
 	Vector3f pos;
 	Vector3f uv;

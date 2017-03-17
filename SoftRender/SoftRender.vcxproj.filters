@@ -50,10 +50,13 @@
     <ClInclude Include="RenderCore.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="Texture.h">
+    <ClInclude Include="Common.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="Common.h">
+    <ClInclude Include="RenderTexture.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="LoadTexture.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

@@ -16,14 +16,9 @@ public:
 	float aspect = 1.25;						// ¿í¸ß±È
 
 	Matrix4x4* World2View();
-	//Matrix4x4* World2View2();
 	Matrix4x4* View2Projection();
-	void OnDestory();
-
+	~Camera();
 private:
 	Camera();
 	static Camera *instance;
-
-	Matrix4x4 *w2vMat;
-	Matrix4x4 *v2pMat;
 };
